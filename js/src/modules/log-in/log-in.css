@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #000428;
+    background: -webkit-linear-gradient(to right, #004e92, #000428);
+    background: linear-gradient(to right, #004e92, #000428);
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 700;
+}
+
+form{
+    background: #fff;
+    padding: 40px 0px;
+    box-shadow: 0 0 6px gray;
+    border-radius: 10px;
+}
+
+.form{
+    width: 100%;
+    margin: auto;
+}
+
+.form__group{
+    position: relative;
+    margin: 45px;
+}
+
+input{
+    background: none;
+    color: #00000073;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #c0000033;
+}
+
+input:focus{
+    outline: none;
+    color: black;
+}
+
+label{
+    color: #013563;
+    font-size: 14px;
+    position: absolute;
+    left: 5px;
+    top:-15px;
+    transition: 0.5s ease all;
+    pointer-events: none;
+}
+
+
+.bar{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.bar::before{
+    content: "";
+    height: 2px;
+    width: 0%;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(to right, #004e92, #c00100);
+    transition: 0.2s ease width;
+    left: 0;
+}
+
+input:focus~.bar::before{
+    width: 100%;
+}
+
+.form__warnings{
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: #c00000a8;
+    padding-top: 20px;
+}
+
+button{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: linear-gradient(to right, #004e92, #c00000a8);
+    border: none;
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    color: white;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+a{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #004e92;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+@media screen and (max-width:500px){
+    form{
+        width: 80%;
+    }
+}

@@ -1,0 +1,431 @@
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* --------------------------- FONTS --------------------------- */
+
+@font-face {
+    font-family: "WebSymbolsRegular";
+    src: url(/LaRivera/fonts/websymbols-regular-webfont.eot);
+    src: url(/LaRivera/fonts/websymbols-regular-webfont.eot?#iefix) format("embedded-opentype"),
+        url(/LaRivera/fonts/websymbols-regular-webfont.woff) format("woff"),
+        url(/LaRivera/fonts/websymbols-regular-webfont.ttf) format("truetype"),
+        url(/LaRivera/fonts/websymbols-regular-webfont.svg#WebSymbolsRegular) format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.icon {
+    font-family: 'WebSymbolsRegular';
+}
+
+.container, .container-fluid,
+.container-lg, .container-md,
+.container-sm, .container-xl,
+.container-xxl{
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+
+/* --------------------------- HEADER --------------------------- */
+
+#header {
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 80px;
+    transition: 0.7s;
+    z-index: 10;
+}
+
+#header.down {
+    background: #c00100;
+    padding: 0px 20px;
+    box-shadow: 0px 2px 4px #8080809d;
+
+}
+
+/* --------------------------- LOGO --------------------------- */
+
+.logo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 30%;
+
+}
+
+/* --------------------------- LOGOTIPO --------------------------- */
+
+#header .logotipo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 28px;
+    letter-spacing: 4px;
+    text-decoration: none;
+    border-radius: 8px;
+
+    transition: all 300ms ease;
+}
+
+#header .logotipo:hover {
+    box-shadow: 1px 1px 6px #ffda47;
+}
+
+/* --------------------------- NAVBAR --------------------------- */
+
+#nav {
+    display: block;
+    width: 55%;
+}
+
+#header ul {
+    position: relative;
+    display: flex;
+    padding-top: 16px;
+}
+
+#header ul li {
+    list-style: none !important;
+    width: 100%;
+    /* margin-right: 10px; */
+}
+
+
+#header ul li a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 55px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+#header ul li a:hover {
+    color: #ffda47;
+}
+
+/* --------------------------- DROP-DOWN NAVBAR --------------------------- */
+#nav ul li ul {
+    display: none;
+    position: absolute;
+    width: 140px;
+    background: #00000041;
+    list-style: none;
+    z-index: 3;
+}
+
+
+#nav ul li:hover ul {
+    display: block;
+    padding-top: 0px;
+    padding-left: 0px;
+    overflow: hidden;
+
+    animation: show 400ms ease-in-out;
+
+}
+
+@keyframes show {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#header.down ul li a:hover {
+    color: #ffda47;
+}
+
+#nav ul li:hover ul li {
+    background: #c00100;
+}
+
+#nav ul li:hover ul li a:hover {
+    display: flex;
+    width: 100%;
+    background: #a03030a2;
+    text-decoration: none;
+}
+
+#header.down .logotipo,
+#header.down ul li a {
+    color: white;
+    border-color: white;
+}
+
+/*--------------------- SECTION ONE ----------------------------*/
+
+.sectionOne {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: url(../../../../img/shop-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 90px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 200px;
+    margin-top: 50px;
+    font-size: 40px;
+    font-style: italic;
+    color: white;
+    border: 2px solid white;
+    background: #200d0d79;
+}
+
+.box a {
+    text-decoration: none;
+    color: white;
+}
+
+.box a:hover {
+    text-decoration: underline;
+}
+
+/*--------------------- SECTION TWO ----------------------------*/
+
+.sectionTwo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    font-size: 35px;
+    font-style: italic;
+    background: url(../../../../img/sect-two-bg.png);
+    background-size: cover;
+    background-position: -1px;
+    margin-bottom: 50px;
+}
+
+.sectionTwo > p {
+    margin: 0px 20px;
+}
+
+/*--------------------- SHOPING CAR ----------------------------*/
+#app{
+    height: 500px;
+}
+
+#store-container {
+    display: block;
+    bottom: 0;
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+#store-container .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 350px;
+    height: 400px;
+    border: solid 1px #ccc;
+    color: black;
+    padding: 20px;
+    background-image: url(../../../../img/pack.jpg);
+    background-size: cover;
+    box-shadow: 0px 2px 6px gray;
+}
+
+#shopping-cart-container {
+    position: absolute;
+    right: 0;
+    width: 300px;
+    border: solid 1px #333;
+    padding: 10px;
+    background: #ccc;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.item .title {
+    font-weight: bold;
+}
+
+.item .price {
+    color: green;
+    font-weight: bold;
+}
+
+
+.item div {
+    padding: 5px 0;
+}
+
+.total {
+    padding: 10px 0;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+button {
+    border: none;
+    background-color: rgb(241, 217, 28);
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* --------------------------- NEW FOOTER --------------------------- */
+
+#new_footer {
+    position: fixed;
+    display: flex;
+    bottom: 0;
+    width: 100%;
+    transform: translateY(40px);
+    transition: 0.5s;
+}
+
+#new_footer .foContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 18px;
+    transition: 0.7s ease-out;
+}
+
+
+#new_footer .foContainer .social a {
+    color: #ddd;
+    text-decoration: none;
+    transition: 300ms ease;
+}
+
+#new_footer .foContainer .social a:hover {
+    color: #c00100;
+}
+
+
+#new_footer.downFooter {
+    height: 40px;
+    background: #c00100;
+    color: white;
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+#new_footer.downFooter .foContainer {
+    padding: 0px 20px;
+    font-size: 18px;
+}
+
+
+#new_footer.downFooter .foContainer a {
+    color: white;
+    font-size: 25px;
+}
+
+#new_footer.downFooter .foContainer a:hover {
+    color: gray;
+}
+
+/* FOOTER */
+
+#footer {
+    width: 100%;
+    height: 470px;
+    background: black;
+    color: white;
+    overflow: hidden;
+}
+
+#footer .wrap>div {
+    float: left;
+    width: 25%;
+    height: 370px;
+    margin: 40px;
+    text-align: center;
+}
+
+
+#footer a {
+    text-decoration: none;
+    color: white;
+    transition: all 300ms;
+}
+
+#footer h5 {
+    display: block;
+    background: white;
+    height: 50px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 55px;
+    color: black;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+#footer ul {
+    text-align: left;
+    margin: 10px;
+    font-size: 20px;
+}
+
+#footer ul li {
+    margin-top: 10px;
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+    list-style: none;
+}
+
+
+#footer ul li a {
+    display: block;
+    height: 40px;
+    transition: all 300ms;
+}
+
+#footer ul li:hover a {
+    padding-left: 20px;
+    color: #ffda47;
+    width: 100%;
+}
+
+#footer iframe {
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+    border-radius: 5px;
+}

@@ -1,0 +1,161 @@
+@media (max-width: 1250px) {
+    #header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 110px;
+    }
+
+    #header .logotipo {
+        width: 140px;
+        font-size: 20px;
+        margin-top: 30px;
+    }
+
+    #nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #header ul {
+        width: 50%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #header ul li a {
+        font-size: 15px;
+        width: 100px
+    }
+
+    /* new footer */
+    #new_footer.downFooter .foContainer{
+        font-size: 15px;
+    }
+
+    #new_footer.downFooter .foContainer a{
+        font-size: 20px;
+    }
+
+    #new_footer.downFooter {
+        height: 30px;
+    }
+
+    /* footer */
+    #footer .wrap>div {
+        margin-right: 30px;
+        width: 22%;
+    }
+
+    #footer h5,
+    #footer ul {
+        font-size: 15px;
+    }
+
+    #footer iframe {
+        height: 280px;
+    }
+}
+
+@media (max-width: 810px) {
+
+    /* section two */
+    #sectionTwo {
+        height: auto;
+        margin-bottom: 0px;
+    }
+
+    #sectionTwo .articles{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #sectionTwo .article {
+        height: auto;
+        width: 80%;
+        margin-bottom: 50px;
+    }
+
+    /* section three */
+    #section_three {
+        flex-direction: column;
+        height: 800px;
+        width: 80%;
+    }
+
+    #section_three>.overlay:hover>.capa a {
+        color: white;
+        margin-top: 40px;
+        margin-bottom: 10px;
+    
+    }
+
+    /* footer  */
+    #footer {
+        height: auto;
+    }
+
+    #footer .wrap>div{
+        float: none;
+        width: 100%;
+        margin: 0px;
+        padding: 20px 20px;
+    }
+
+    #footer iframe {
+        height: 280px;
+    }
+}
+
+@media (max-width: 500px){
+
+    #header {
+        display: flex;
+        width: 100%;
+        height: 110px;
+    }
+
+    #nav{
+        width: 100%;
+        height: 50px;
+    }
+
+    #header ul {
+        padding-left: 0px;
+        margin-bottom: 0px;
+        width: 100%;
+        height: 40px;
+    }
+
+    #header .logotipo {
+        width: 140px;
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #header ul li a {
+        font-size: 13px;
+        width: 100%;
+        height: 30px;
+    }
+
+    /* footer */
+
+    .foot-box{
+        display: none;
+    }
+
+    #new_footer .foContainer{
+        justify-content: center;
+    }
+
+    #new_footer.downFooter .foContainer a{
+        font-size: 20px;
+        padding: 0px 5px;
+    }
+
+}
